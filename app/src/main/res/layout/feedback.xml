@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedbackActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_weight="1"
+            android:text="      真實結果:" />
+        <Spinner
+            android:id="@+id/get"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1" />
+        <EditText
+            android:id="@+id/distance"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="差距"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:id="@+id/save_f"
+            android:layout_weight="1"
+            android:text="保存" />
+        <Button
+            android:id="@+id/feedback"
+            android:text="反饋"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/predictEnter_f"
+            android:layout_weight="1"
+            android:text="預測"
+            />
+    </TableRow>
+
+</TableLayout>
